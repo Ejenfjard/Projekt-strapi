@@ -1,0 +1,270 @@
+body {
+    background: linear-gradient(rgba(120, 120, 236, 0.8), rgba(168, 163, 163, 0.8));
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: min-content;
+}
+
+
+
+#login-register-page {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.form-box {
+    width: 300px;
+    max-width: 450px;
+    background: #fff;
+    padding: 50px 60px 70px;
+    border-radius: 10px;
+    margin: 50px;
+
+
+}
+
+.form-box h1 {
+    font-size: 30px;
+    color: #3c00a0;
+    position: relative;
+}
+
+#loginRegisterPage .input-group {
+    height: 280px;
+
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+#name-input,
+#password-input,
+#email-input {
+    width: 50%;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+
+
+input {
+    background: transparent;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 3%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+#login-btn {
+    background: #eaeaea;
+    color: #555;
+}
+
+.login-mode #email-field {
+    display: none;
+}
+
+
+header {
+    background-color: #b9b6b6;
+    /* Bakgrundsfärg */
+    color: #fff;
+    /* Textfärg */
+    padding: 10px 20px;
+    /* Inre utfyllnad */
+    position: fixed;
+    /* Fixerad position */
+    width: 100%;
+    /* Full bredd */
+    top: 0;
+    /* Håll headern fast högst upp */
+    z-index: 1000;
+    /* Hög z-index för att ligga ovanpå innehållet */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Lätt skugga för att separera från innehållet */
+}
+
+nav {
+    display: flex;
+
+}
+
+
+
+.button-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-end;
+    margin-top: -50px;
+    margin-right: 50px;
+    gap: 10px;
+}
+
+/* Stil för huvudinnehåll (main) */
+main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: 100px;
+    /* Justera efter headerns höjd */
+    padding: 20px;
+    /* Inre utfyllnad */
+    overflow-y: auto;
+    /* Skapa vertikal scrollbar vid behov */
+}
+
+li {
+    list-style: none;
+}
+
+/* Style for the delete button */
+.delete-book-btn {
+    background-color: transparent;
+    /* Gör bakgrunden genomskinlig */
+    border: none;
+    /* Ta bort kantlinje */
+    cursor: pointer;
+    /* Visa pekaren som en hand när användaren hovrar över knappen */
+    padding: 5px;
+}
+
+/* Style for the trash icon */
+.delete-book-icon {
+    color: red;
+    /* Ändra färgen på ikonen */
+    font-size: 1.8em;
+    /* Ändra storleken på ikonen */
+    transition: transform 0.2s;
+    /* Lägg till en mjuk övergångseffekt */
+}
+
+/* Förstora ikonen när användaren hovrar över knappen */
+.delete-book-btn:hover .delete-book-icon {
+    transform: scale(1.2);
+
+    /* Förstora ikonen lite */
+}
+
+.book-actions {
+    margin: 10px;
+}
+
+#book-list {
+    list-style-type: none;
+    /* Ta bort punktlistan */
+    padding: 0;
+    /* Ta bort inre utfyllnad */
+    margin: 50px;
+    /* Ta bort marginal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px solid lightgrey;
+    width: 700px;
+    height: 200px;
+    margin: 5px;
+
+}
+
+
+
+.book-image {
+    width: 30%;
+    overflow: hidden;
+}
+
+.book-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.book-info {
+    width: 70%;
+    margin-left: -50px;
+}
+
+.book-title {
+    font-weight: bold;
+}
+
+.book-author {
+    font-style: italic;
+}
+
+.favorite-book {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 40px;
+    font-size: 24px;
+    color: red;
+}
+
+.favorite-book:hover {
+    color: rgb(249, 70, 70);
+    font-size: 28px;
+}
+
+/* body.darkmode */
+
+body.darkmode {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+body.lightmode {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.blue {
+    background: linear-gradient(rgba(120, 120, 236, 0.8), rgba(168, 163, 163, 0.8));
+}
