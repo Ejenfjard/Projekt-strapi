@@ -151,6 +151,9 @@ const login = async (event) => {
         }
 
     } catch (error) {
+        // Visa felmeddelande på sidan
+        document.getElementById("loginErrorMessage").textContent = "Invalid username or password. Please try again.";
+        document.getElementById("loginErrorMessage").style.display = "block";
         console.error('Error logging in:', error.response ? error.response.data : error.message);
     }
 };
